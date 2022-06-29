@@ -1,0 +1,1 @@
+<img src="/image/tmp/self_pay.jpg" alt="">

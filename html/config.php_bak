@@ -1,0 +1,6 @@
+<?
+$hostname = '172.27.0.105';
+$username = 'ecomomdb';
+$password = 'ecomom2018!!';
+$database = 'ecomomdb';
+?>

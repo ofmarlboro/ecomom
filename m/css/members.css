@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+/* Layout */
+.member-wrap {
+	position:relative;
+	font-size:13px;
+	line-height:1.5em;
+}
+.member-wrap img {vertical-align:middle;}
+.member-inner {
+	position:relative;
+	padding:10% 4.6875% 15%;
+}
+.mem-tinted-bg {
+	background:#fafafa;
+	padding-top:10%;
+	padding-bottom:15%;
+}
+.member-wrap .em {
+	color:#d70000;	
+}
+@media all and (min-width:768px) {
+	.member-wrap {font-size:15px; letter-spacing:-0.03em; }
+}
+
+/* Attributes - Form */
+.member-wrap input {
+	box-sizing:border-box;
+}
+.member-wrap input[type="checkbox"] {
+	vertical-align:middle;
+	width:18px; height:18px;
+}
+.member-wrap input[type="radio"] {
+	vertical-align:middle;
+	width:18px; height:18px;
+	margin-left:1px;
+}
+.member-wrap input[type="text"],
+.member-wrap input[type="password"] {
+	box-sizing:border-box;
+	padding:0 5px;
+	border:1px solid #d0d0d0;
+	vertical-align:middle;
+	height:35px;
+	border-radius:3px;
+}
+.member-wrap select {
+	border:1px solid #d0d0d0;
+	vertical-align:middle;
+	height:35px;
+	border-radius:3px;
+}
+.member-wrap input[type="checkbox"] {
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	background:url("../image/shop/chkbox.png") no-repeat 0 0;
+	background-size:18px 36px;
+	border-radius:0;
+	border:0;
+	outline:0;
+}
+.member-wrap textarea {
+	box-sizing:border-box;
+	resize:none;
+	border-radius:3px;
+	padding:10px 5px;
+	border:1px solid #d0d0d0;
+}
+.member-wrap input[type="checkbox"]:checked {
+	background-position:0 -18px;
+}
+.member-wrap input[type="text"]:focus,
+.member-wrap input[type="password"]:focus,
+.member-wrap select:focus,
+.member-wrap textarea:focus {
+	border-color:#333;
+	outline:0;
+}
+.field-tel { width:29.5%; }
+/* Attributes - Buttons */
+.mem-btn-ok {
+	box-sizing:border-box;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	outline:0;
+	text-align:center;
+	height:2.5em;
+	padding:0 2em;
+	border-radius:8px;
+	background-color:#0cab83;
+	border:1px solid #0cab83;
+	color:#fff !important;
+	font-weight:600;
+	font-size:1.14em;
+	letter-spacing:-0.05em;
+}
+.mem-btn-border {
+	box-sizing:border-box;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	outline:0;
+	text-align:center;
+	height:2.5em;
+	padding:0 2em;
+	border-radius:8px;
+	background-color:transparent;
+	border:1px solid #0cab83;
+	color:#257964 !important;
+	font-weight:600;
+	font-size:1.14em;
+	letter-spacing:-0.05em;
+}
+/* title */
+.join-tit {
+	margin-bottom:7.5%;
+	padding-bottom:3.5%;
+	border-bottom:2px solid #333;
+}
+.member-tit {
+	font-size:1.4em;
+	line-height:1.5em;
+	color:#333;
+	letter-spacing:-1px;
+	background-repeat:no-repeat;
+	background-size:24px 24px;
+	background-position:left center;
+}
+.member-tit.icon-chk {
+	padding-left:30px;
+	background-image:url("../image/members/icon_chk.png");
+}
+.member-tit.icon-user {
+	padding-left:30px;
+	background-image:url("../image/members/icon_user.png");
+}
+.member-tit.icon-edit {
+	padding-left:30px;
+	background-image:url("../image/members/icon_edit.png");
+}
+.member-tit.icon-fmail {
+	padding-left:30px;
+	background-image:url("../image/members/icon_mailfind.png");
+}
+.member-tit.icon-fphone {
+	padding-left:30px;
+	background-image:url("../image/members/icon_phonefind.png");
+}
+/* Join : 약관동의 */
+.join-condi-wrap {
+	margin-top:15px;
+	border-radius:10px;
+	overflow:hidden;
+	background:#fff;
+	border:1px solid #ccc; 
+	margin-bottom:2em;
+}
+.join-condi {
+	overflow:auto;
+	font-size:0.92em;
+	line-height:1.5em;
+	height:12em;
+	padding:1em;
+	overflow-scrolling:touch;
+	-webkit-overflow-scrolling:touch;
+	-moz-overflow-scrolling:touch;
+}
+.join-condi-chk {
+	padding:0.75em 0;
+	text-align:center;
+	background:#fdfdfd;
+	border-top:1px solid #e0e0e0;
+}
+/* Join : 회원가입폼 */
+.mem-form {
+	background:#fff;
+	border-radius:10px;
+	border:1px solid #ccc;
+	margin-top:5px;
+	margin-bottom:30px;
+	overflow:hidden;
+}
+.mem-form .btn-border-s {
+	border-radius:3px;
+}
+.mem-form li {
+	border-top:1px solid #ddd;
+}
+.mem-form li:first-child {
+	border-top:0;
+}
+.mem-label {
+	font-weight:600;
+	padding:10px 1em;
+	font-size:13px;
+	background:#fafafa;
+}
+.mem-field {
+	padding:12px 1em;
+}
+/* 가입완료 */
+.join-wrap .welcome-cmt {
+	text-align:center;
+	font-size:0.92em;
+	line-height:1.5em;
+	margin:15px 0;;
+}
+.join-confirm {
+	border-radius:10px;
+	padding:1.5em 0;
+	border:1px solid #ccc;
+	background:#fff;
+	max-width:580px;
+	margin:0 auto 30px;
+}
+.join-confirm li {
+	text-align:center;
+	line-height:1.5em;
+	font-size:0.92em;
+	line-height:1.8em;
+}
+.join-confirm em {
+	display:inline-block;
+	width:15%;
+	padding-left:10%;
+	margin-right:4%;
+	padding-right:4%;
+	text-align:right;
+	color:#8a8a8a;
+	border-right:1px solid #ccc;
+}
+.join-confirm .fd {
+	display:inline-block;
+	width:65%;
+	text-align:left;
+}
+/* 아이디/비밀번호 찾기 */
+.find-type {
+	height:35px;
+	border-bottom:1px solid #444;
+	margin-bottom:25px;
+	padding-left:1px;
+}
+.find-type li {
+	float:left;
+	width:50%;
+	margin-left:-1px;
+}
+.find-type a {
+	display:block;
+	text-align:center;
+	line-height:34px;
+	height:34px;
+	width:100%;
+	border:1px solid #ddd;
+	background:#efefef;
+	color:#8a8a8a;
+	border-bottom:0;
+}
+.find-type .on a {
+	position:relative;
+	z-index:9;
+	color:#333;
+	font-weight:600;
+	background:#fff;
+	border-color:#444;
+	border-bottom:1px solid #fff;
+}
+/* 회원탈퇴 */
+.leave-wrap > p {
+	font-size:11px;
+	line-height:1.65em;
+	letter-spacing:-0.03em;
+	color:#777;
+}
+.leave-wrap .join-form {
+	border-top:1px solid #ddd;
+}
+.leave-wrap textarea {
+	width:96%;
+}
+.leave-wrap h5 {
+	font-size:15px;
+	line-height:1.5em;
+	font-weight:600;
+	padding-bottom:8px;
+	border-bottom:1px solid #444;
+}
+
+/* 마이페이지 인덱스 */
+.myp-top {
+	overflow:hidden;
+	padding:0 4.6875%;
+}
+.myp-id {
+	float:left;
+	color:#333;
+	font-size:14px;
+	font-weight:600;
+	line-height:25px;
+	padding-left:30px;
+	margin-right:5px;
+	background:url("../image/members/icon_mypage.png") no-repeat left center;
+	background-size:25px 25px;
+	margin-bottom:10px;
+}
+.myp-top-btn {
+	float:right;
+	margin-bottom:10px;
+	letter-spacing:-2px;
+}
+.myp-top-btn button {
+	height:25px;
+	font-size:12px;
+	background:#fdfdfd;
+}
+.myp-point {
+	padding:15px 4.6875%;
+	background:#f8f8f8;
+	overflow:hidden;
+	margin-bottom:40px;
+}
+.myp-point li {
+	font-size:0.92em;
+	line-height:1.8em;
+	padding-left:10px;
+	background:url("../image/members/more_bl.png") no-repeat left center;
+	background-size:5px 8px;
+}
+.myp-point em {
+	color:#dc2b2b;
+	font-weight:600;
+	letter-spacing:0.03em;
+	font-weight:800;
+}
+.myp-wrap .member-tit {
+	padding:0 4.6875%;
+	margin-bottom:5px;
+	font-weight:600;
+}
+.myp-idx {
+	border-top:1px solid #6a6a6a;
+	margin-bottom:30px;
+}
+.myp-idx li {
+	border-bottom:1px solid #ddd;
+}
+.myp-idx a {
+	display:block;
+	line-height:1.8em;
+	padding:10px 4.6875%;
+	background:url("../image/members/more_bl.png") no-repeat 95.3125% center;
+	background-size:5px 8px;
+}
+.myp-idx img {
+	width:16px;
+	margin-right:10px;
+	vertical-align:middle;
+}
+/* 패스워드 체크 2017-11-20 */
+.pw-chk {
+	display:block;
+	font-size:11px;
+	margin-top:8px;
+	color:#999;
+}
+.pw-chk.incorr {
+	color:#f05228;
+	padding-left:15px;
+	background:url("../image/members/icon_cancel.png") no-repeat left center;
+	background-size:12px 12px;
+}
+.pw-chk.corr {
+	color:#35af0d;
+	padding-left:15px;
+	background:url("../image/members/icon_chk2.png") no-repeat left center;
+	background-size:12px 12px;
+}
+
+
+/* 비밀번호 찾기 (**2020.04.22 추가) */
+.pw-wrap {
+	padding: 30px 0;
+}
+.t-wide {
+	background-color: #fff;
+	padding: 40px 20px;
+    box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #ddd;
+}
+.login_tit {	
+	text-align: center;
+	font-size: 25px;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 25px;
+}
+.login-form > li {
+	margin-bottom: 10px;
+}
+.login-form > li input {
+	width: 100%;
+	box-sizing: border-box;
+	height: 40px !important;
+	border-color: #ddd !important;
+	border-radius: 3px;
+	padding-left: 10px !important;
+}
+.login-form > li input::-ms-input-placeholder { font-size: 14px; color: #aaa; }
+.login-form > li input::-webkit-input-placeholder { font-size: 14px; color: #aaa; } 
+.login-form > li input::-moz-placeholder { font-size: 14px; color: #aaa; }
+
+.login-form > li .btn {
+	background-color: #4e8dc9;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	height: 60px;
+	border-radius: 3px;
+}
+.login-side {
+	padding-top: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 14px;
+	color: #777;
+}
+.login-side a {
+	text-decoration: underline;
+	color: #333;
+}
+.btn_ban .my_btn {
+	width: 120px;
+	margin: 0 5px;
+	height: 50px;
+}
+.my_btn.one { 
+	background: #e1002c;
+}
+.my_btn.two { 
+	background: #666;
+}
+.my_btn {
+	background: #333;
+	font-size: 15px;
+	height: 45px;
+	width: 100%;
+	border-radius: 5px;
+	color: #fff;
+}
+.my_wrap .tit {
+	font-size: 30px;
+	line-height: 35px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.my_wrap .sub {
+	font-size: 16px;
+	color: #555555;
+}
+.my_box .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.my_box .sub {
+    font-size: 16px;
+    color: #888888;
+}
+.id_inj {
+	margin-top: 40px;
+}
+.id_inj li {
+	width: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+}
+.id_inj li:first-child {
+	border-right: 1px solid #ddd;
+	padding-right: 5%;
+}
+.id_inj li:last-child {
+	padding-left: 5%;
+}
+.id_inj li .img {
+	margin-bottom: 20px;
+}

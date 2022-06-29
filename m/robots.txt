@@ -1,0 +1,15 @@
+﻿User-agent: *
+Allow: /
+Disallow: /m/_data/
+Disallow: /m/_dhadm/
+Disallow: /m/html/dhadm/
+Disallow: /m/html/basic/
+Disallow: /m/html/member/
+Disallow: /m/html/board/
+Disallow: /m/html/popup/
+Disallow: /m/html/total/
+Disallow: /m/html/product/
+Disallow: /m/html/order/
+Disallow: /m/js/
+Disallow: /m/css/
+Crawl-delay: 3600

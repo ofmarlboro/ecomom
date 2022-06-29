@@ -1,0 +1,252 @@
+<?
+	$PageName = "DEPOSIT";
+	$SubName = "";
+	$PageTitle = "예치금";
+	include('../include/head.php');
+	include('../include/header.php');
+?>
+
+<!--Container-->
+
+<div id="container">
+  <?include("../include/my_top.php");?>
+  <div class="inner clearfix">
+    <?include("../include/mypage_lnb.php");?>
+
+    <div class="my_cont clearfix">
+      <div>
+
+
+        <ol class="deposit-check">
+          <li>
+            ✓ 산골이유식 쇼핑몰에서 상품 구입시 현금과 동일하게 사용가능한 적립금입니다
+          </li>
+          <li>
+            ✓ 상품 결제시 현금(예치금 1원 - 현금1원)처럼 사용하실 수 있습니다.
+          </li>
+          <li>
+            ✓ 산골이유식 본사 홈페이지 아이디를 기준으로 결제가 가능합니다.
+          </li>
+          <li class="deposit-check__emp">
+            ✓ 예치금 유효기간이 없으며, 환불 신청 가능합니다.
+          </li>
+        </ol>
+
+        <button type="button" class="deposit-charge-btn">충전하기</button>
+
+        <div class="deposit-current">
+          <div class="deposit-current__text">사용가능 예치금</div>
+          <div class="deposit-current__money"><strong>300,000</strong>원</div>
+        </div>
+
+
+
+        <div class="deposit-form">
+          <div class="deposit-form__btns">
+            <p>조회기간</p>
+            <button>오늘</button>
+            <button>7일</button>
+            <button>1개월</button>
+            <button>3개월</button>
+          </div>
+
+          <div class="deposit-form__date">
+            <input type="text" class="deposit-picker" id="" size="10"> <img src="/image/sub/cal_icon.png" alt="">&nbsp;~&nbsp;
+            <input type="text" class="deposit-picker" id="" size="10"> <img src="/image/sub/cal_icon.png" alt="">
+          </div>
+
+          <button type="button" class="deposit-from__btn">조회하기</button>
+        </div>
+
+
+        <nav class="deposit-tab">
+          <a href="" class="active">전체</a>
+          <a href="">적립내역</a>
+          <a href="">사용내역</a>
+        </nav>
+
+        <div class="tblTy01">
+          <table>
+            <tr>
+              <th>구분</th>
+              <th>상세내역</th>
+              <th>금액</th>
+              <th>발생일</th>
+            </tr>
+
+            <tr>
+              <td>적립</td>
+              <td>구매적립예정 / 주문번호 ABCD123412341234</td>
+              <td>+756원</td>
+              <td>2022.02.24</td>
+            </tr>
+
+            <tr>
+              <td>사용</td>
+              <td>구매적립예정 / 주문번호 ABCD123412341234</td>
+              <td>+756원</td>
+              <td>2022.02.24</td>
+            </tr>
+
+            <tr>
+              <td>충전</td>
+              <td>구매적립예정 / 주문번호 ABCD123412341234</td>
+              <td>+756원</td>
+              <td>2022.02.24</td>
+            </tr>
+          </table>
+        </div>
+        <p class="board-pager align-c" title="페이지 이동하기">
+          <button type="button"><img src="/image/board_img/arrow_l_end.gif" alt="맨 앞으로"></button>
+          <button type="button"><img src="/image/board_img/arrow_l.gif" alt="이전"></button>
+          <a href="" class="on">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+          <button type="button"><img src="/image/board_img/arrow_r.gif" alt="다음"></button>
+          <button type="button"><img src="/image/board_img/arrow_r_end.gif" alt="맨 뒤로"></button>
+        </p>
+
+
+        <p class="deposit-tit">예치금 환불신청</p>
+        <div class="deposit-form">
+          <div class="deposit-form__input">
+            <p>환불요청액</p>
+            <input type="text">원
+          </div>
+
+
+          <div class="deposit-form__input">
+            <p>입금받을 계좌</p>
+            <select name="" id="">
+              <option value="">선택</option>
+              <option value="">신한은행</option>
+            </select>
+            <input type="text" placeholder="계좌번호" class="long">
+            <input type="text" placeholder="예금주">
+          </div>
+
+          <button type="button" class="deposit-from__btn">환불신청</button>
+        </div>
+        <p class="deposit-msg">*본인명의의 계좌 및 입금계좌로만 환불신청이 가능하며 신청하신 날로부터 2-3일 내에 환불금액이 입금됩니다 (영업일 기준) </p>
+
+        <div class="tblTy01">
+          <table>
+            <tr>
+              <th>환불내역</th>
+              <th>상세내역</th>
+              <th>금액</th>
+              <th>발생일</th>
+              <th>승인내역</th>
+            </tr>
+
+            <tr>
+              <td>환불완료</td>
+              <td>카드수수료 제외한 부분취소 금액이 환불됩니다.</td>
+              <td>48,600원</td>
+              <td>2022.02.24</td>
+              <td>승인완료</td>
+            </tr>
+
+            <tr>
+              <td>환불신청</td>
+              <td>신한은행 : 110-132-424231 / 임꺽정</td>
+              <td>48,600원</td>
+              <td>2022.02.24</td>
+              <td>승인대기중</td>
+            </tr>
+          </table>
+        </div>
+
+        <p class="board-pager align-c" title="페이지 이동하기">
+          <button type="button"><img src="/image/board_img/arrow_l_end.gif" alt="맨 앞으로"></button>
+          <button type="button"><img src="/image/board_img/arrow_l.gif" alt="이전"></button>
+          <a href="" class="on">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+          <button type="button"><img src="/image/board_img/arrow_r.gif" alt="다음"></button>
+          <button type="button"><img src="/image/board_img/arrow_r_end.gif" alt="맨 뒤로"></button>
+        </p>
+
+        <div class="deposit-warn">
+          <p>예치금 적립 주문 취소등의 환불금액 발생 시 적립금으로 적립되니 참고 부탁드립니다.</p>
+          <p>적립금 : 이유식과 간식만 주문가능하며, 이 외 [협업상품(예: 오산골농부 농산물)]은 구매가 불가능합니다.</p>
+          <p>예치금 : 모든 상품 구매 가능합니다.</p>
+          <p>베이비페어 포인트판매는 예치금이 아닌 포인트이므로 7일 이 후 환불 불가합니다.</p>
+          <p>주문 취소로 인한 예치금 적립시 무통장입금은 부분 취소금액 전액이 입금되며, <br>카드결제 및 휴대폰 결제는 취소 수수료 2.6%를 제외한 금액이 입금됩니다.</p>
+          <p>환불 : 본인계좌 및 입금계좌로만 가능하며, 신청하신 날로부터 2-3일 내어 환불금액이 입금됩니다.(영업일 기준)</p>
+        </div>
+
+
+        <!-- 예치금 팝업 -->
+        <div class="deposit-popup">
+          <button type="button" class="deposit__close">
+            <img src="/image/sub/deposit_close.png" alt="">
+          </button>
+
+          <p class="deposit__tit">예치금 충전</p>
+
+          <div class="deposit__input">
+            <input type="text" placeholder="금액을 입력해주세요.">
+            <button type="button" class="deposit__reset">
+              <img src="/image/sub/deposit_reset_btn.png" alt="">
+            </button>
+          </div>
+          <div class="deposit__charge">
+            <p class="deposit__currency">현재 보유금 : <span>35,000</span>원</p>
+            <div class="deposit__btns">
+              <button type="button">+10만원</button>
+              <button type="button">+30만원</button>
+              <button type="button">+50만원</button>
+              <button type="button">+100만원</button>
+            </div>
+            <p class="deposit__msg">1만원 단위 / <span>내 충전한도 : <strong>2,000,000</strong>원</span></p>
+          </div>
+
+          <button type="submit" class="deposit__sumbit">충전하기</button>
+        </div>
+
+        <div class="deposit__dim"></div>
+        <!-- //예치금 팝업 -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--END Container-->
+
+<script>
+  $(function () {
+    $(".deposit-picker").datepicker({
+      dateFormat: "yy-mm-dd",
+      monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+      dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+      showMonthAfterYear: true,
+      minDate: 0
+    });
+
+    $('.deposit-charge-btn').on('click', function(){
+      $('.deposit-popup, .deposit__dim')
+      .show()
+      .stop()
+      .animate({
+        opacity: 1,
+      }, 300)
+    })
+
+    $('.deposit__close, .deposit__dim').on('click', function(){
+      $('.deposit-popup, .deposit__dim')
+      .stop()
+      .animate({
+        opacity: 0,
+      }, 300, function(){
+        $(this).hide();
+      })
+    })
+  })
+</script>
+
+<? include('../include/footer.php') ?>
