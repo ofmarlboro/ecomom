@@ -2861,7 +2861,16 @@ body {
 
 .mypage_top .li:last-child {
   border-right: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
+
+.mypage_top .li:last-child  h3 {
+  margin-top:0;
+}
+
 
 .mypage_top .li em {
   font-size: 25px;
@@ -6927,7 +6936,7 @@ span.circle {
 .deposit-top p{
 	color: #987c41;
 	font-weight: 600;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .deposit-check {
@@ -6966,7 +6975,7 @@ span.circle {
   font-weight: 600;
   cursor: pointer;
   margin-top: 25px;
-	background-color:#f7ca68;
+	background-color:#ffc853;
 	color: #000;
 	font-size: 22px;
 }

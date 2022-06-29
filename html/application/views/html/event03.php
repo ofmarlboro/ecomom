@@ -33,10 +33,8 @@
 			<a href="/html/dh/thankyou">
 				<img src="/image/sub/event_thankyou_img02.jpg" alt="">
 			</a>
-			<img src="/image/sub/event_thankyou_img03.jpg" alt="">
 
 			<img src="/image/sub/event_0303_04.jpg" alt="">
-			<img src="/image/sub/event_0303_04-2.jpg" alt="">
 			<img src="/image/sub/event_0303_05.jpg" alt="">
 			<!--<img src="/image/sub/event_0303_06.jpg" alt="">
 			<a href="/html/dh_product/prod_list/?cate_no=3"><img src="/image/sub/event_0303_07.jpg" alt=""></a>-->

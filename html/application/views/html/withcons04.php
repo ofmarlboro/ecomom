@@ -30,9 +30,10 @@
 						<td class="al pd20"><!-- - 사진과 함께 올린 성실한 후기 1,000 원<br>
 						- 글로 성실하게 쓴 후기 추첨 500 원<br>
 						- 월별 후기퀸 30,000 원 상당 이유식&유아식 무료증정<br> -->
-						인스타그램 후기 매월 5명 선정, 2만원 상당 제철꾸러미(이유식 등)<br>
-<div class="red">기본 요건 갖추지 않은 후기 적립금 지급을 하지 않으며,<br>
-게시 또한 하지 않습니다.</div></td>
+						인스타그램 후기 매월 5명 선정, <br>
+						2만원 상당 제철꾸러미(이유식 등)<br>
+						기본 요건 갖추지 않은 후기 적립금 지급을 하지 않으며,<br>
+						게시 또한 하지 않습니다.</td>
 					</tbody>
 
 				</table>
@@ -40,7 +41,14 @@
 			</div>
 
 
-			<div class="my_tit mt50">산골이유식 정기배송 땡큐포인트 혜택</div>
+			<div class="my_tit mt50" style="display: flex; justify-content: space-between;">
+				<p>
+					산골이유식 정기배송 땡큐포인트 혜택
+				</p>
+				
+				
+				<a href="/html/dh/thankyou" style="width: 120px; line-height: 40px; height: 40px; font-size: 14px; text-align: center; background-color: #333; color: #fff; border-radius: 2em;">자세히 보기</a>
+			</div>
 			<div class="tblTy01">
 			<table class="v-line">
 				<colgroup>
@@ -54,10 +62,10 @@
 					<tbody>
 						<tr>
 							<td>
-								<div class="red">초기 – 반찬국까지<br><small>각 단계별 4주정기배송 6일분이상 1회씩 신청해도 신청가능!</small></div>
+								초기 – 반찬국까지<br><small>각 단계별 4주정기배송 6일분이상 1회씩 신청해도 신청가능!</small>
 							</td>
 							<td class="bd-l">
-								<div class="red">10만 포인트 지급</div>
+								10만 포인트 지급
 							</td>
 						</tr>
 						<tr>
@@ -110,15 +118,15 @@
 						<th><img src="/image/sub/d.png" alt=""></th>
 					</thead>
 					<tbody>
-						<td class="pd20">120만원 이상<br>5% 적립, 10,000원 할인쿠폰</td>
-						<td class="bd">60만원 이상<br>3% 적립, 5,000원 할인쿠폰</td>
-						<td>60만원 미만<br>1% 적립</td>
+						<td class="pd20">120만원 이상<br>3% 적립</td>
+						<td class="bd">60만원 이상<br>2% 적립</td>
+						<td>60만원 미만 (자사 홈페이지 가입 후 구매 첫 고객부터)<br>1% 적립</td>
 					</tbody>
 
 				</table>
 
 			</div>
-			<div class="red ar mt10">* 적립금 및 쿠폰 보유시점은 적립금 완료 후 1년 이내이며 자동소멸됩니다.</div>
+			<div class="ar mt10">* 적립금 및 쿠폰 보유시점은 적립금 완료 후 1년 이내이며 자동소멸됩니다.</div>
 		</div>
 	</div><!--END Container-->
 

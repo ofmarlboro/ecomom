@@ -48,10 +48,14 @@ if($this->uri->segment(4)=="edit"){
 </script>
 
 <?php
-include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top.php";
+if($mode == "write"){
+}
+else{
+	include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top.php";
+}
 ?>
 
-<table class="adm-tab mb20 mt20">
+<!-- <table class="adm-tab mb20 mt20">
 	<tr>
 		<th <?if($mode == "edit" || $mode == "write"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/edit/<?=$row->idx?>/<?=$query_string.$param?>">회원 정보 관리</a></th>
 		<th <?if($mode == "order"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/order/<?=$row->idx?>/<?=$query_string.$param?>">주문 내역</a></th>
@@ -61,7 +65,7 @@ include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top
 		<th <?if($mode == "deliv_place"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/deliv_place/<?=$row->idx?>/<?=$query_string.$param?>">배송지 관리</a></th>
 		<th <?if($mode == "admin_memo"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/admin_memo/<?=$row->idx?>/<?=$query_string.$param?>">관리자 메모</a></th>
 	</tr>
-</table>
+</table> -->
 
 			<form name="frm" id="frm" method="post" enctype="multipart/form-data">
 				<?if($this->uri->segment(4)=="write"){?>
@@ -71,7 +75,7 @@ include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top
 				<?}?>
 
 				<!-- 제품정보 -->
-				<h3 class="icon-pen"><?if($this->uri->segment(4)=="write"){?>등록<?}else{?>수정<?}?>하기</h3>
+				<h3 class="icon-pen mt20"><?if($this->uri->segment(4)=="write"){?>등록<?}else{?>수정<?}?>하기</h3>
 				<table class="adm-table mb50">
 					<caption>User 정보를 입력하는 폼</caption>
 					<colgroup>

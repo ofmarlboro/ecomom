@@ -27,7 +27,7 @@
 include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top.php";
 ?>
 
-<table class="adm-tab mt20">
+<!-- <table class="adm-tab mt20">
 	<tr>
 		<th <?if($mode == "edit"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/edit/<?=$row->idx?>/<?=$query_string.$param?>">회원 정보 관리</a></th>
 		<th <?if($mode == "order"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/order/<?=$row->idx?>/<?=$query_string.$param?>">주문 내역</a></th>
@@ -37,10 +37,10 @@ include $_SERVER['DOCUMENT_ROOT']."/html/application/views/dhadm/member_info_top
 		<th <?if($mode == "deliv_place"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/deliv_place/<?=$row->idx?>/<?=$query_string.$param?>">배송지 관리</a></th>
 		<th <?if($mode == "admin_memo"){?>class="on"<?}?>><a href="<?=cdir()?>/member/user/m/admin_memo/<?=$row->idx?>/<?=$query_string.$param?>">관리자 메모</a></th>
 	</tr>
-</table>
+</table> -->
 
 <!-- <h3 class="icon-list">문의내역</h3> -->
-<div class="tab_title_noborder">
+<div class="tab_title_noborder mt20">
 	<p class="tab_inner">
 		:: 총 <?=count($list)?> 건의 문의내역이 있습니다.
 	</p>

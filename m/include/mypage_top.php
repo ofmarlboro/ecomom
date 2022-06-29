@@ -39,9 +39,13 @@
 		<p class="g8">적립금</p>
 		<h3><em><a href="/m/html/dh_order/point"><?=number_format($point->point)?></a></em><span>원</span></h3>
 	</div>
-	<div class="li" style="width:100%">
+	<div class="li">
 		<p class="g8">예치금</p>
 		<h3><em><a href="/m/html/dh/deposit"><?=number_format($total_deposit)?></a></em><span>원</span></h3>
+		
+		<button type="button" class="deposit-charge-btn" style="display: none;">예치금 충전하기</button>
+		<p style="font-size: 14px; color: #987c41; text-align: center; margin-top: 10px; width: 100%; display: none;">예치금 50만원이상 예치 시, 포인트 1만원 적립드려요!</p>
+		
 	</div>
 
 

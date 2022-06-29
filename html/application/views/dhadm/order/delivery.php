@@ -510,10 +510,11 @@
 					<?=$lt->order_phone?>
 					<br>
 					<a href="javascript:show_layer('<?=$lt->idx?>');"><?=$lt->order_name?></a>
-					<div class="layer_t layer_t<?=$lt->idx?>" style="display: none;background: #000;border: 1px solid #ddd;border-bottom: 0;position: absolute;top: 50px;left: 0px;z-index:999">
+					<div class="layer_t layer_t<?=$lt->idx?>" style="display: none;background: #000;border: 1px solid #ddd;border-bottom: 0;position: relative;top: 0px;left: 0px;z-index:999">
 						<a href="javascript:window.open('/html/member/user/m/edit/<?=$lt->useridx?>/','','')" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">회원정보변경</a>
 						<a href="javascript:window.open('/html/member/user/m/order/<?=$lt->useridx?>/','','')" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">구매내역보기</a>
-						<a href="javascript:window.open('/html/member/user/m/point/<?=$lt->useridx?>/','','')" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">포인트내역</a>
+						<a href="javascript:window.open('/html/member/user/m/point/<?=$lt->useridx?>/','','')" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">적립금내역</a>
+						<a href="javascript:window.open('/html/member/user/m/deposit/<?=$lt->useridx?>/','','')" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">예치금내역</a>
 						<a href="javascript:window.open('/html/member/coupon/<?=$lt->useridx?>/?ajax=1','coupon_set','width=715, height=615');" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">쿠폰보내기</a>
 						<a href="javascript:window.open('/html/member/smspop?ajax=1&phone=<?=$lt->order_phone?>&name=<?=$lt->order_name?>&uid=<?=$lt->userid?>','sms_pop','width=505, height=526');" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">SMS 발송</a>
 					</div>
@@ -524,7 +525,7 @@
 				<td style="position: relative;">
 					<?=$lt->recv_phone?><br>
 					<a href="javascript:show_layer_r('<?=$lt->idx?>');"><?=$lt->recv_name?></a>
-					<div class="layer_t layer_r<?=$lt->idx?>" style="display: none;background: #000;border: 1px solid #ddd;border-bottom: 0;position: absolute;top: 60px;left: 0px;z-index:999">
+					<div class="layer_t layer_r<?=$lt->idx?>" style="display: none;background: #000;border: 1px solid #ddd;border-bottom: 0;position: relative;top: 0px;left: 0px;z-index:999">
 						<a href="javascript:window.open('/html/member/smspop?ajax=1&phone=<?=$lt->recv_phone?>&name=<?=$lt->recv_name?>&uid=<?=$lt->userid?>','sms_pop','width=505, height=526');" style="border-bottom: 1px solid #fff;display: block;padding: 5px 10px;text-align: center;color: #fff;">SMS 발송</a>
 					</div>
 				</td>

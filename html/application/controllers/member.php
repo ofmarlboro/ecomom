@@ -416,6 +416,15 @@ class Member extends CI_Controller {
 
 			$this->load->view("/dhadm/tab_page/".$mode."_list",$data);
 		}
+		else if($mode == "deposit"){	//회원정보 탭 : 적립금내역
+			$idx = $this->uri->segment(5);
+			$data['row'] = $this->common_m->getRow("dh_member", "where idx='".$this->db->escape_str($idx)."'");
+
+			$data['list'] = $this->common_m->self_q("select * from dh_deposit where userid = '".$data['row']->userid."'","result");
+			$data['total_point'] = $this->common_m->getSum("dh_deposit","point", "where userid = '".$data['row']->userid."'");
+
+			$this->load->view("/dhadm/tab_page/".$mode."_list",$data);
+		}
 		else if($mode == "coupon"){	//회원정보 탭 : 쿠폰내역
 			$idx = $this->uri->segment(5);
 			$data['row'] = $this->common_m->getRow("dh_member", "where idx='".$this->db->escape_str($idx)."'");
